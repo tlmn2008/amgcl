@@ -1,0 +1,45 @@
+{
+  "tests_run": 13,
+  "tests_passed": 13,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "run_command": "cmake -S . -B build_corex_full -DUSE_COREX=ON -DAMGCL_BUILD_TESTS=ON -DAMGCL_BUILD_EXAMPLES=ON -DCMAKE_BUILD_TYPE=Release && cmake --build build_corex_full -j && ctest --test-dir build_corex_full -V",
+  "duration_seconds": 35,
+  "suites": [
+    {
+      "name": "ctest-cpu",
+      "tests_run": 12,
+      "tests_passed": 12,
+      "tests_failed": 0,
+      "tests_skipped": 0
+    },
+    {
+      "name": "ctest-cuda-backend",
+      "tests_run": 1,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_skipped": 0
+    }
+  ],
+  "metrics": [
+    {
+      "name": "cuda_backend_solve_iterations",
+      "metric_type": "other",
+      "value": 6,
+      "unit": "iterations",
+      "device": "Iluvatar BI-V150",
+      "config": "cuda<float>(AMGCL_CUDA_COREX_FP32) + generic cusparseSpMV(AMGCL_CUDA_COREX), 3D Poisson 32^3, BiCGStab+smoothed_aggregation, solver.tol=1e-6",
+      "source": "ctest test_solver_cuda"
+    },
+    {
+      "name": "cuda_backend_solve_residual",
+      "metric_type": "other",
+      "value": 2.73853e-07,
+      "unit": "relative_residual",
+      "device": "Iluvatar BI-V150",
+      "config": "同上；收敛残差(<=1e-5 判通过)",
+      "source": "ctest test_solver_cuda"
+    }
+  ],
+  "notes": "范围: 运行 amgcl 官方 ctest 全量套件(全部 12 个 CPU/builtin+Eigen+complex+block_crs 用例)，外加本次迁移新注册的 CUDA 后端求解用例 test_solver_cuda(用 cmake/corex_check_convergence.cmake 把 solver_cuda 在 3D Poisson 上的求解包装为收敛判定)。全部用 CoreX clang++ 22.1.0(-x ivcore, ivcore11)构建。12 个 CPU 用例零源码改动全过(x86 主机有真 FP64)。CUDA 后端用例经两项平台门控修复后通过: (1) AMGCL_CUDA_COREX 强制现代 generic cusparseSpMV(ivcore11 上 legacy Hyb SpMV 是静默 no-op); (2) AMGCL_CUDA_COREX_FP32 将 CUDA value_type 由 double 降为 float(ivcore11 无真 FP64)。上游默认的 double CUDA 路径本身在本平台不可用(FP64 硬件缺失, 见 blockers.json 的 fp64-double-unsupported-ivcore11), 属 corex-issue; 迁移交付的是平台门控 FP32 路径。tests_run=passed 13+failed 0+skipped 0=13。逐用例明细见 test.log(ctest -V 全量输出); CUDA 后端根因复现证据(SpMV/thrust 探针、float/double 对照、legacy vs generic 对照)见 corex_port/build/cuda/ 下 run_*.log。amgcl 上游未提供任何 CUDA 版 ctest 用例, CUDA 后端原仅由 examples 驱动, 故 test_solver_cuda 为本次为覆盖 GPU 路径而新增。"
+}

@@ -1,0 +1,100 @@
+[ 50%] Building CXX object examples/CMakeFiles/solver_cuda.dir/solver.cpp.o
+In file included from /home/repos/amgcl/examples/solver.cpp:22:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/solver.cpp:23:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+3 warnings generated when compiling for ivcore11.
+In file included from /home/repos/amgcl/examples/solver.cpp:22:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/solver.cpp:23:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+3 warnings generated when compiling for host.
+[100%] Linking CXX executable solver_cuda
+[100%] Built target solver_cuda
+[ 50%] Building CXX object examples/CMakeFiles/schur_pressure_correction_cuda.dir/schur_pressure_correction.cpp.o
+In file included from /home/repos/amgcl/examples/schur_pressure_correction.cpp:17:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/schur_pressure_correction.cpp:18:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+3 warnings generated when compiling for ivcore11.
+In file included from /home/repos/amgcl/examples/schur_pressure_correction.cpp:17:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/schur_pressure_correction.cpp:18:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+3 warnings generated when compiling for host.
+[100%] Linking CXX executable schur_pressure_correction_cuda
+[100%] Built target schur_pressure_correction_cuda
+[ 50%] Building CXX object examples/CMakeFiles/cpr_drs_cuda.dir/cpr_drs.cpp.o
+In file included from /home/repos/amgcl/examples/cpr_drs.cpp:17:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/cpr_drs.cpp:18:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+3 warnings generated when compiling for ivcore11.
+In file included from /home/repos/amgcl/examples/cpr_drs.cpp:17:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/cpr_drs.cpp:18:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+3 warnings generated when compiling for host.
+[100%] Linking CXX executable cpr_drs_cuda
+[100%] Built target cpr_drs_cuda
+[  0%] Building CXX object tutorial/1.poisson3Db/CMakeFiles/poisson3Db_cuda.dir/poisson3Db_cuda.cu.o
+In file included from /home/repos/amgcl/tutorial/1.poisson3Db/poisson3Db_cuda.cu:4:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+2 warnings generated when compiling for ivcore11.
+In file included from /home/repos/amgcl/tutorial/1.poisson3Db/poisson3Db_cuda.cu:4:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+2 warnings generated when compiling for host.
+[100%] Linking CXX executable poisson3Db_cuda
+[100%] Built target poisson3Db_cuda

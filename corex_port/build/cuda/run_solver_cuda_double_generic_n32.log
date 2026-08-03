@@ -1,0 +1,24 @@
+./corex_port/build/cuda/solver_cuda_double_generic -n 32
+Iluvatar BI-V150
+
+Solver
+======
+Type:             BiCGStab
+Unknowns:         32768
+Memory footprint: 1.75 M
+
+Preconditioner
+==============
+Number of levels:    3
+Operator complexity: 1.59
+Grid complexity:     1.14
+Memory footprint:    8.93 M
+
+level     unknowns       nonzeros      memory
+---------------------------------------------
+    0        32768         223232      6.48 M (62.80%)
+    1         4192         114356      1.88 M (32.17%)
+    2          346          17898    584.44 K ( 5.03%)
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  CUDA error 10 at "/home/repos/amgcl/amgcl/backend/cuda.hpp:296

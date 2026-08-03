@@ -1,0 +1,4 @@
+[generic SpMV float ] y = 2 2 2 2 2 2 2 2  (expected all 2)
+cusparse/cuda err 10 @36
+cusparse/cuda err 10 @40
+[generic SpMV double] y = 0 0 0 0 0 0 0 0  (expected all 2)

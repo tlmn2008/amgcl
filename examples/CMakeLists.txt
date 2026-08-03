@@ -107,21 +107,44 @@ if (TARGET viennacl_target)
 endif()
 
 if (TARGET cuda_target)
-    function(add_cuda_example example)
-        configure_file(
-            ${CMAKE_CURRENT_SOURCE_DIR}/${example}.cpp
-            ${CMAKE_CURRENT_BINARY_DIR}/${example}.cu
-            COPYONLY
-            )
+    if (USE_COREX)
+        # CoreX (ivcore11): no nvcc; compile the example straight from the .cpp
+        # as an ivcore11 CUDA translation unit with clang++ -x ivcore.
+        function(add_cuda_example example)
+            add_executable(${example}_cuda ${CMAKE_CURRENT_SOURCE_DIR}/${example}.cpp)
+            target_compile_options(${example}_cuda PRIVATE ${AMGCL_COREX_CUDA_FLAGS})
+            target_compile_definitions(${example}_cuda PRIVATE SOLVER_BACKEND_CUDA)
+            target_link_libraries(${example}_cuda amgcl_example cuda_target)
+        endfunction()
+    else()
+        function(add_cuda_example example)
+            configure_file(
+                ${CMAKE_CURRENT_SOURCE_DIR}/${example}.cpp
+                ${CMAKE_CURRENT_BINARY_DIR}/${example}.cu
+                COPYONLY
+                )
 
-        cuda_add_executable(${example}_cuda ${CMAKE_CURRENT_BINARY_DIR}/${example}.cu
-            OPTIONS -DSOLVER_BACKEND_CUDA)
-        target_link_libraries(${example}_cuda amgcl_example cuda_target)
-    endfunction()
+            cuda_add_executable(${example}_cuda ${CMAKE_CURRENT_BINARY_DIR}/${example}.cu
+                OPTIONS -DSOLVER_BACKEND_CUDA)
+            target_link_libraries(${example}_cuda amgcl_example cuda_target)
+        endfunction()
+    endif()
 
     add_cuda_example(solver)
     add_cuda_example(schur_pressure_correction)
     add_cuda_example(cpr_drs)
+
+    # On CoreX, register the CUDA backend solver as a ctest case so that the
+    # `ctest` suite exercises the migrated GPU path. The wrapper fails the test
+    # unless the solver converges below the requested tolerance.
+    if (USE_COREX)
+        enable_testing()
+        add_test(NAME test_solver_cuda
+            COMMAND ${CMAKE_COMMAND}
+                -DEXE=$<TARGET_FILE:solver_cuda>
+                -DTOL=1e-6
+                -P ${CMAKE_CURRENT_SOURCE_DIR}/../cmake/corex_check_convergence.cmake)
+    endif()
 endif()
 
 if (TARGET hip_target)

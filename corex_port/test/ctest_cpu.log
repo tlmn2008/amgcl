@@ -1,0 +1,29 @@
+Test project /home/repos/amgcl/build_corex
+      Start  1: test_skyline_lu
+ 1/12 Test  #1: test_skyline_lu ..................   Passed    0.15 sec
+      Start  2: test_complex_erf
+ 2/12 Test  #2: test_complex_erf .................   Passed    0.29 sec
+      Start  3: test_qr
+ 3/12 Test  #3: test_qr ..........................   Passed    0.00 sec
+      Start  4: test_solver_builtin
+ 4/12 Test  #4: test_solver_builtin ..............   Passed    8.98 sec
+      Start  5: test_solver_complex
+ 5/12 Test  #5: test_solver_complex ..............   Passed    4.36 sec
+      Start  6: test_solver_block_crs
+ 6/12 Test  #6: test_solver_block_crs ............   Passed    6.69 sec
+      Start  7: test_solver_ns_builtin
+ 7/12 Test  #7: test_solver_ns_builtin ...........   Passed    4.64 sec
+      Start  8: test_io
+ 8/12 Test  #8: test_io ..........................   Passed    0.05 sec
+      Start  9: test_static_matrix
+ 9/12 Test  #9: test_static_matrix ...............   Passed    0.00 sec
+      Start 10: test_eigen_solver
+10/12 Test #10: test_eigen_solver ................   Passed    0.12 sec
+      Start 11: test_solver_eigen
+11/12 Test #11: test_solver_eigen ................   Passed    1.84 sec
+      Start 12: test_solver_ns_eigen
+12/12 Test #12: test_solver_ns_eigen .............   Passed    7.26 sec
+
+100% tests passed, 0 tests failed out of 12
+
+Total Test time (real) =  34.40 sec

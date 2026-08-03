@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "repo": "amgcl",
+  "target": "BI-V150",
+  "blockers": [
+    {
+      "id": "nvcc-cuda-build-unavailable-on-corex",
+      "desc": "上游用 nvcc 的 FindCUDA 模块函数 cuda_add_executable() 构建所有 CUDA 示例(examples/、tutorial/、examples/mpi/)，并用 find_package(CUDA)+cuda_select_nvcc_arch_flags 生成 -gencode 架构标志。CoreX 无 nvcc(红线2)，且 find_package(CUDA) 在 clang 工具链下未被调用，cuda_add_executable 未定义，CUDA 后端与示例根本无法构建。",
+      "category": "build",
+      "phase": "setup",
+      "verdict": "workaround",
+      "status": "fixed",
+      "file": "CMakeLists.txt, examples/CMakeLists.txt, tutorial/1.poisson3Db/CMakeLists.txt, examples/mpi/CMakeLists.txt",
+      "error": "CMake Error: Unknown CMake command \"cuda_add_executable\"; find_package(CUDA) gated to GNU/MSVC 编译器，clang 路径下 cuda_target 不生成",
+      "root_cause": "amgcl 的 CUDA 构建面向 nvcc(cuda_add_executable / cuda_select_nvcc_arch_flags / -gencode)。CoreX 用 clang++ -x ivcore 取代 nvcc，架构由 --cuda-gpu-arch=ivcore11 固定，-gencode/sm_XX 无意义。证据: 直接 clang++ -x ivcore --cuda-path=/usr/local/corex --cuda-gpu-arch=ivcore11 -std=c++17 编译 examples/solver.cpp(-DSOLVER_BACKEND_CUDA)成功产出可执行文件(corex_port/build/cuda/compile_solver_cuda.log)。结论: 纯用户态构建系统适配，仓库本地可解。",
+      "attempts": [
+        {
+          "action": "在 CMakeLists.txt 新增 option(USE_COREX)(依据 /usr/local/corex 自动探测)：CoreX 上以 INTERFACE 库 cuda_target 直接链接 CoreX libcusparse/libcudart/libcublas，定义 AMGCL_COREX_CUDA_FLAGS=(-x ivcore --cuda-path=/usr/local/corex --cuda-gpu-arch=ivcore11 -std=c++17)；examples/tutorial 增加 USE_COREX 分支用 clang++ 取代 cuda_add_executable；MPI+CUDA 示例按 <=2GPU 约束在 CoreX 跳过。上游 nvcc 分支保留在 else。",
+          "result": "resolved：solver/schur_pressure_correction/cpr_drs/poisson3Db 的 CUDA 版全部经 CMake 用 clang++ -x ivcore 构建成功(corex_port/build/build_cuda_examples.log)。"
+        }
+      ],
+      "ref": "iluvatar-cuda-base: nvcc-flag-translation / cmake-corex-template / nvcc 是 script stub"
+    },
+    {
+      "id": "legacy-cusparse-hyb-spmv-noop-ivcore11",
+      "desc": "CoreX 的 CUDA 运行时报告版本为 10.2(CUDART_VERSION=10020 < 11000)，使 amgcl/backend/cuda.hpp 选择 legacy cuSPARSE Hyb SpMV 路径(cusparseScsr2hyb + cusparse{S,D}hybmv)。实测该 Hyb 路径在 ivcore11 上是静默 no-op：SpMV 结果恒为全 0(float 与 double 皆然)，导致 AMG/BiCGStab 的核心矩阵向量乘失效，任何求解器都无法收敛。",
+      "category": "api",
+      "phase": "runtime",
+      "verdict": "workaround",
+      "status": "fixed",
+      "file": "amgcl/backend/cuda.hpp",
+      "error": "Hyb SpMV(cusparseShybmv/Dhybmv)返回全 0；直接现象为 solver_cuda 100 步不收敛、Error≈1.0(见 run_solver_cuda_double_n32.log)",
+      "root_cause": "CoreX libcusparse 提供了 legacy Hyb 符号(cusparseScsr2hyb/Shybmv/Dhybmv 存在)但其实现是 no-op；A=diag(2)、x=1 的 SpMV 期望得 2，实测得 0(corex_port/build/cuda/run_spmv_probe.log：float/double 均输出全 0)。而现代 generic API(cusparseCreateCsr + cusparseSpMV)在 ivcore11 上 float 正确(run_generic_spmv_probe.log：float 输出全 2)。amgcl 仅因 CUDART 版本号=10.2 而误走了坏掉的 Hyb 分支。结论: 平台门控切到 generic SpMV 即可修复(float)，仓库本地可解。",
+      "attempts": [
+        {
+          "action": "写最小 SpMV 复现(spmv_probe.cpp 用 amgcl cuda_matrix 的 Hyb 路径 / generic_spmv_probe.cpp 用现代 cusparseSpMV)，对照确认 Hyb=0(坏)、generic float=2(好)。",
+          "result": "confirmed：Hyb no-op；generic 正确。"
+        },
+        {
+          "action": "在 amgcl/backend/cuda.hpp 增加平台门控宏 AMGCL_CUDA_COREX：定义时 AMGCL_CUDA_USE_GENERIC_SPMV=1 强制走 generic cusparseSpMV 分支(即便 CUDART<11000)，并把 CUSPARSE_SPMV_CSR_ALG1(11.0 名)映射为 CoreX 10.2 的 CUSPARSE_MV_ALG_DEFAULT；未定义时等价于原 CUDART_VERSION>=11000 判断。",
+          "result": "resolved：切到 generic SpMV(float)后 solver_cuda 在 3D Poisson 上收敛(6~7 步，残差 ~1e-7~1e-9，见 run_solver_cuda_fp32_generic_n32.log 与 test.log 的 test_solver_cuda)。"
+        }
+      ],
+      "ref": "iluvatar-cuda-base: legacy cuSPARSE 路径缺陷(cusparse-snnz-noop 同源，legacy cuSPARSE 实现不可靠)"
+    },
+    {
+      "id": "fp64-double-unsupported-ivcore11",
+      "desc": "amgcl 是科学计算求解库，CUDA 后端默认 value_type=double(所有示例硬编码 amgcl::backend::cuda<double>，backend 的 static_assert 只允许 float/double)。ivcore11 无真 FP64：(1) device 端 double 归约缺符号——thrust::inner_product<double>(BiCGStab 内积所依赖)抛 ixErrorSymbolNotFound；(2) 现代 generic cusparseSpMV 对 double 返回 NOT_SUPPORTED(错误码 10)。因此 double 求解路径无法在本平台运行。",
+      "category": "precision",
+      "phase": "runtime",
+      "verdict": "corex-issue",
+      "status": "open",
+      "file": "amgcl/backend/cuda.hpp, examples/solver.cpp",
+      "error": "thrust::inner_product<double>: 'after reduction step 1: ixErrorSymbolNotFound: named symbol not found'; cusparseSpMV(double): CUDA error 10 (CUSPARSE_STATUS_NOT_SUPPORTED) at amgcl/backend/cuda.hpp:296",
+      "root_cause": "Iluvatar ivcore11(BI-V150)无真 double/float64 硬件。证据: (a) fp64_probe：thrust::inner_product<float> 正确得 100000，thrust::inner_product<double> 抛 ixErrorSymbolNotFound(device 双精度归约 kernel 符号缺失，corex_port/build/cuda/run_fp64_probe.log)；(b) generic_spmv_probe：generic cusparseSpMV<float> 正确(全 2)，<double> 返回 err 10 NOT_SUPPORTED(run_generic_spmv_probe.log)；(c) 端到端：即便已启用 generic SpMV，double 版 solver_cuda 在双精度 SpMV 处抛 err 10(run_solver_cuda_double_generic_n32.log)。属对照 iluvatar-cuda-base 已登记的 FP64 家族硬件缺失(double 静默 fp32 / CUB DeviceReduce::Sum double 返 0 / cusolver/cusparse double NOT_SUPPORTED)。结论: 不改 /usr/local/corex(红线1)无法为 amgcl 提供可用的 device 双精度，属 CoreX 本征限制。",
+      "attempts": [
+        {
+          "action": "强制启用现代 generic cusparseSpMV(AMGCL_CUDA_COREX)后重试 double：验证是否只是 legacy Hyb 的问题。",
+          "result": "failed：double 在 generic cusparseSpMV 处返回 NOT_SUPPORTED(err 10)，thrust double 归约同样抛符号缺失——确为 FP64 硬件缺失而非 API 路径问题。"
+        },
+        {
+          "action": "按红线3/5 做平台门控的 FP32 降级：examples/solver.cpp 增加 AMGCL_CUDA_COREX_FP32 宏，将 CUDA 后端 value_type 由 double 降为 float(守卫式，默认 double 分支保留、上游不受影响)。",
+          "result": "mitigated：FP32 降级 + generic SpMV 后，CUDA 后端在 3D Poisson(32^3=32768 未知量)上收敛(6~7 步，残差 ~1e-7~1e-9)，即 test_solver_cuda 通过。但 double(FP64)路径本身仍无解，保留为 open 的 corex-issue。"
+        }
+      ],
+      "runtime_test_impact": "默认 double CUDA 路径不可用；迁移改为平台门控 FP32 后 CUDA 求解可用并计入 test_solver_cuda 通过。主机侧 ctest(CPU)不受影响(x86 有真 FP64)。",
+      "affected_tests": [
+        "test_solver_cuda (double 配置不可运行；FP32 门控配置通过)"
+      ],
+      "ref": "iluvatar-cuda-base: double 静默 fp32 / double-cmath-broken / CUB DeviceReduce::Sum double 返 0 / cusolver-sgesvd 仅 float"
+    }
+  ]
+}

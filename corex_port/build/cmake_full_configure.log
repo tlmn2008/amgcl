@@ -1,0 +1,43 @@
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Warning (dev) at CMakeLists.txt:27 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- AMGCL: building CUDA backend for Iluvatar CoreX (ivcore11) from /usr/local/corex
+CMake Deprecation Warning at docs/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Warning at CMakeLists.txt:370 (export):
+  Cannot create package registry file:
+
+    /root/.cmake/packages/amgcl/157c0917b0dd1e7fae0576d6d77125e4
+
+  No such file or directory
+
+
+
+-- Configuring done (2.2s)
+CMake Error: Cannot determine link language for target "poisson3Db_cuda".
+CMake Error: CMake can not determine linker language for target: poisson3Db_cuda
+-- Generating done (0.1s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.

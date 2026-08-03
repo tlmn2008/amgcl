@@ -1,0 +1,41 @@
+corex_port/build/cuda/fp64_probe.cpp:42:12: error: no matching constructor for initialization of 'Solver' (aka 'amgcl::make_solver<amgcl::amg<amgcl::backend::cuda<float>, amgcl::coarsening::smoothed_aggregation, amgcl::relaxation::spai0>, amgcl::solver::bicgstab<amgcl::backend::cuda<float>>>')
+   42 |     Solver solve(std::tie(rows, ptr, col, val), bprm);
+      |            ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+corex_port/build/cuda/fp64_probe.cpp:72:5: note: in instantiation of function template specialization 'solve_and_report<float>' requested here
+   72 |     solve_and_report<float>("cuda<float> ", rows, ptr, col, val, rhs);
+      |     ^
+/home/repos/amgcl/amgcl/make_solver.hpp:94:9: note: candidate constructor template not viable: no known conversion from 'typename Backend::params' to 'const params' for 2nd argument
+   94 |         make_solver(
+      |         ^
+   95 |                 const Matrix &A,
+   96 |                 const params &prm = params(),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/repos/amgcl/amgcl/make_solver.hpp:106:9: note: candidate constructor not viable: no known conversion from 'tuple<unsigned long &, const std::vector<long, std::allocator<long>> &, const std::vector<long, std::allocator<long>> &, std::vector<float, std::allocator<float>> &>' to 'std::shared_ptr<build_matrix>' (aka 'std::shared_ptr<crs<float, long, long>>') for 1st argument
+  106 |         make_solver(
+      |         ^
+  107 |                 std::shared_ptr<build_matrix> A,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/repos/amgcl/amgcl/make_solver.hpp:45:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+   45 | class make_solver : public amgcl::detail::non_copyable {
+      |       ^~~~~~~~~~~
+corex_port/build/cuda/fp64_probe.cpp:42:12: error: no matching constructor for initialization of 'Solver' (aka 'amgcl::make_solver<amgcl::amg<amgcl::backend::cuda<double>, amgcl::coarsening::smoothed_aggregation, amgcl::relaxation::spai0>, amgcl::solver::bicgstab<amgcl::backend::cuda<double>>>')
+   42 |     Solver solve(std::tie(rows, ptr, col, val), bprm);
+      |            ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+corex_port/build/cuda/fp64_probe.cpp:73:5: note: in instantiation of function template specialization 'solve_and_report<double>' requested here
+   73 |     solve_and_report<double>("cuda<double>", rows, ptr, col, val, rhs);
+      |     ^
+/home/repos/amgcl/amgcl/make_solver.hpp:94:9: note: candidate constructor template not viable: no known conversion from 'typename Backend::params' to 'const params' for 2nd argument
+   94 |         make_solver(
+      |         ^
+   95 |                 const Matrix &A,
+   96 |                 const params &prm = params(),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/repos/amgcl/amgcl/make_solver.hpp:106:9: note: candidate constructor not viable: no known conversion from 'tuple<unsigned long &, const std::vector<long, std::allocator<long>> &, const std::vector<long, std::allocator<long>> &, std::vector<double, std::allocator<double>> &>' to 'std::shared_ptr<build_matrix>' (aka 'std::shared_ptr<crs<double, long, long>>') for 1st argument
+  106 |         make_solver(
+      |         ^
+  107 |                 std::shared_ptr<build_matrix> A,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/repos/amgcl/amgcl/make_solver.hpp:45:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+   45 | class make_solver : public amgcl::detail::non_copyable {
+      |       ^~~~~~~~~~~
+2 errors generated when compiling for ivcore11.

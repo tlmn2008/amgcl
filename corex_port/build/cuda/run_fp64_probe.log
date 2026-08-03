@@ -1,0 +1,4 @@
+[probe] thrust::inner_product<float>  ones dot = 100000 (expected 100000)
+[probe] thrust::inner_product<double> THREW: after reduction step 1: ixErrorSymbolNotFound: named symbol not found
+[cuda<float> ] iters=1 error=nan
+[cuda<double>] iters=100 error=1.00005

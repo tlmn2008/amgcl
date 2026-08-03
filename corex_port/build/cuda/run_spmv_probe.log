@@ -1,0 +1,2 @@
+[SpMV float ] y = 0 0 0 0 0 0 0 0  (expected all 2)
+[SpMV double] y = 0 0 0 0 0 0 0 0  (expected all 2)

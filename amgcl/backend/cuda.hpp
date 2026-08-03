@@ -49,6 +49,33 @@ THE SOFTWARE.
 #include <thrust/tuple.h>
 #include <cusparse_v2.h>
 
+// ---------------------------------------------------------------------------
+// Iluvatar CoreX (ivcore11) adaptation, opt-in and platform-guarded.
+//
+// On CoreX the CUDA runtime reports version 10.2 (CUDART_VERSION==10020), which
+// makes amgcl select the *legacy* cuSPARSE Hyb SpMV path below
+// (cusparseScsr2hyb / cusparse{S,D}hybmv). That legacy path is a silent no-op on
+// ivcore11 (SpMV returns all-zeros), so no solver can converge. The *modern*
+// generic API (cusparseCreateCsr + cusparseSpMV) is available and correct on
+// CoreX, so when AMGCL_CUDA_COREX is defined we force the generic SpMV path even
+// though CUDART_VERSION < 11000. The only 11.0-era name that is missing on the
+// CoreX 10.2 headers is the SpMV algorithm enum, mapped here to its 10.2 name.
+//
+// Nothing changes for the upstream/NVIDIA build: when AMGCL_CUDA_COREX is not
+// defined this reduces to the original `CUDART_VERSION >= 11000` behaviour.
+// ---------------------------------------------------------------------------
+#if defined(AMGCL_CUDA_COREX) || (CUDART_VERSION >= 11000)
+#  define AMGCL_CUDA_USE_GENERIC_SPMV 1
+#else
+#  define AMGCL_CUDA_USE_GENERIC_SPMV 0
+#endif
+
+#if CUDART_VERSION >= 11000
+#  define AMGCL_CUSPARSE_SPMV_ALG CUSPARSE_SPMV_CSR_ALG1
+#else
+#  define AMGCL_CUSPARSE_SPMV_ALG CUSPARSE_MV_ALG_DEFAULT
+#endif
+
 namespace amgcl {
 
 namespace solver {
@@ -152,7 +179,7 @@ cudaDataType cuda_datatype() {
         return CUDA_R_64F;
 }
 
-#if CUDART_VERSION >= 11000
+#if AMGCL_CUDA_USE_GENERIC_SPMV
 template <typename real>
 cusparseDnVecDescr_t cuda_vector_description(thrust::device_vector<real> &x) {
     cusparseDnVecDescr_t desc;
@@ -209,11 +236,11 @@ cusparseSpMatDescr_t cuda_matrix_description(
             );
     return desc;
 }
-#endif // CUDART_VERSION >= 11000
+#endif // AMGCL_CUDA_USE_GENERIC_SPMV
 
 } // namespace detail
 
-#if CUDART_VERSION >= 11000
+#if AMGCL_CUDA_USE_GENERIC_SPMV
 /// CUSPARSE matrix in CSR format.
 template <typename real>
 class cuda_matrix {
@@ -263,7 +290,7 @@ class cuda_matrix {
                             &beta,
                             ydesc.get(),
                             detail::cuda_datatype<real>(),
-                            CUSPARSE_SPMV_CSR_ALG1,
+                            AMGCL_CUSPARSE_SPMV_ALG,
                             &buf_size
                             )
                         );
@@ -282,7 +309,7 @@ class cuda_matrix {
                             &beta,
                             ydesc.get(),
                             detail::cuda_datatype<real>(),
-                            CUSPARSE_SPMV_CSR_ALG1,
+                            AMGCL_CUSPARSE_SPMV_ALG,
                             thrust::raw_pointer_cast(&buf[0])
                             )
                         );
@@ -301,7 +328,7 @@ class cuda_matrix {
                         &beta,
                         ydesc.get(),
                         detail::cuda_datatype<real>(),
-                        CUSPARSE_SPMV_CSR_ALG1,
+                        AMGCL_CUSPARSE_SPMV_ALG,
                         thrust::raw_pointer_cast(&buf[0])
                         )
                     );
@@ -332,7 +359,7 @@ class cuda_matrix {
 
 };
 
-#else  // CUDART_VERSION >= 11000
+#else  // AMGCL_CUDA_USE_GENERIC_SPMV
 
 /// CUSPARSE matrix in Hyb format.
 template <typename real>
@@ -460,7 +487,7 @@ class cuda_matrix {
         }
 };
 
-#endif // CUDART_VERSION >= 11000
+#endif // AMGCL_CUDA_USE_GENERIC_SPMV
 /// CUDA backend.
 /**
  * Uses CUSPARSE for matrix operations and Thrust for vector operations.

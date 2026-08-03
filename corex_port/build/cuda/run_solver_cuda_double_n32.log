@@ -1,0 +1,32 @@
+./corex_port/build/cuda/solver_cuda -n 32
+Iluvatar BI-V150
+
+Solver
+======
+Type:             BiCGStab
+Unknowns:         32768
+Memory footprint: 1.75 M
+
+Preconditioner
+==============
+Number of levels:    3
+Operator complexity: 1.59
+Grid complexity:     1.14
+Memory footprint:    8.93 M
+
+level     unknowns       nonzeros      memory
+---------------------------------------------
+    0        32768         223232      6.48 M (62.80%)
+    1         4192         114356      1.88 M (32.17%)
+    2          346          17898    584.44 K ( 5.03%)
+
+Iterations: 100
+Error:      1.00005
+
+[Profile:          0.274 s] (100.00%)
+[ self:            0.005 s] (  1.67%)
+[  assembling:     0.004 s] (  1.33%)
+[  setup:          0.050 s] ( 18.24%)
+[  solve:          0.216 s] ( 78.76%)
+
+

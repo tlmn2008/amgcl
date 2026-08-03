@@ -1,0 +1,435 @@
+[  8%] Building CXX object tests/CMakeFiles/test_qr.dir/test_qr.cpp.o
+[  8%] Building CXX object tests/CMakeFiles/test_skyline_lu.dir/test_skyline_lu.cpp.o
+[ 12%] Building CXX object tests/CMakeFiles/test_complex_erf.dir/test_complex_erf.cpp.o
+[ 16%] Building CXX object tests/CMakeFiles/test_solver_builtin.dir/test_solver_builtin.cpp.o
+[ 20%] Building CXX object tests/CMakeFiles/test_solver_complex.dir/test_solver_complex.cpp.o
+[ 25%] Building CXX object tests/CMakeFiles/test_solver_block_crs.dir/test_solver_block_crs.cpp.o
+[ 29%] Building CXX object tests/CMakeFiles/test_solver_ns_builtin.dir/test_solver_ns_builtin.cpp.o
+[ 33%] Building CXX object tests/CMakeFiles/test_io.dir/test_io.cpp.o
+[ 41%] Building CXX object tests/CMakeFiles/test_solver_eigen.dir/test_solver_eigen.cpp.o
+[ 41%] Building CXX object tests/CMakeFiles/test_static_matrix.dir/test_static_matrix.cpp.o
+[ 45%] Building CXX object tests/CMakeFiles/test_eigen_solver.dir/test_eigen_solver.cpp.o
+[ 50%] Building CXX object tests/CMakeFiles/test_solver_ns_eigen.dir/test_solver_ns_eigen.cpp.o
+/home/repos/amgcl/tests/test_static_matrix.cpp:6:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    6 | BOOST_AUTO_TEST_SUITE( test_static_matrix )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:8:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    8 | BOOST_AUTO_TEST_CASE( sum ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:18:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   18 | BOOST_AUTO_TEST_CASE( minus ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:27:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   27 | BOOST_AUTO_TEST_CASE( product ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:37:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   37 | BOOST_AUTO_TEST_CASE( scale ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:45:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   45 | BOOST_AUTO_TEST_CASE( inner_product ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:52:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   52 | BOOST_AUTO_TEST_CASE( inverse ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:62:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   62 | BOOST_AUTO_TEST_CASE( inverse_pivoting ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:77:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   77 | BOOST_AUTO_TEST_CASE( inverse_pivoting_2 ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:92:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   92 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+In file included from /home/repos/amgcl/tests/test_solver_eigen.cpp:3:
+In file included from /home/repos/amgcl/amgcl/backend/eigen.hpp:35:
+In file included from /home/repos/amgcl/amgcl/adapter/eigen.hpp:36:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/tests/test_eigen_solver.cpp:4:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+/home/repos/amgcl/tests/test_io.cpp:13:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   13 | BOOST_AUTO_TEST_SUITE( test_io )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_io.cpp:15:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   15 | BOOST_AUTO_TEST_CASE(io_mm)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+In file included from /home/repos/amgcl/tests/test_eigen_solver.cpp:4:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+/home/repos/amgcl/tests/test_io.cpp:51:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   51 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_skyline_lu.cpp:14:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   14 | BOOST_AUTO_TEST_SUITE( test_skyline_lu )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_skyline_lu.cpp:16:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   16 | BOOST_AUTO_TEST_CASE(skyline_lu)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_skyline_lu.cpp:39:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   39 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_solver_complex.cpp:9:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    9 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_complex.cpp:11:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   11 | BOOST_AUTO_TEST_CASE(test_builtin_complex_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_complex.cpp:16:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   16 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_solver_ns_builtin.cpp:8:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    8 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_builtin.cpp:10:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   10 | BOOST_AUTO_TEST_CASE(test_nonscalar_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_builtin.cpp:15:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   15 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_solver_block_crs.cpp:7:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    7 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_block_crs.cpp:9:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    9 | BOOST_AUTO_TEST_CASE(test_block_crs_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_block_crs.cpp:14:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   14 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_solver_builtin.cpp:7:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    7 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_builtin.cpp:9:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    9 | BOOST_AUTO_TEST_CASE(test_builtin_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_builtin.cpp:17:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   17 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_qr.cpp:140:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  140 | BOOST_AUTO_TEST_SUITE( test_qr )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_qr.cpp:142:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  142 | BOOST_AUTO_TEST_CASE( test_qr_factorize ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_qr.cpp:162:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  162 | BOOST_AUTO_TEST_CASE( test_qr_solve ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_qr.cpp:182:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  182 | BOOST_AUTO_TEST_CASE( qr_issue_39 ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_qr.cpp:209:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  209 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_complex_erf.cpp:36:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   36 | BOOST_AUTO_TEST_SUITE( test_complex )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_complex_erf.cpp:38:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   38 | BOOST_AUTO_TEST_CASE(complex_matrix_adapter)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_complex_erf.cpp:86:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   86 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+10 warnings generated.
+[ 54%] Linking CXX executable test_static_matrix
+[ 54%] Built target test_static_matrix
+/home/repos/amgcl/tests/test_solver_eigen.cpp:7:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    7 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_eigen.cpp:9:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    9 | BOOST_AUTO_TEST_CASE(test_eigen_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_eigen.cpp:14:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   14 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_eigen_solver.cpp:15:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   15 | BOOST_AUTO_TEST_SUITE( test_eigen_solver )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_eigen_solver.cpp:17:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   17 | BOOST_AUTO_TEST_CASE(eigen_solver)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_eigen_solver.cpp:43:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   43 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_solver_ns_eigen.cpp:8:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    8 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_eigen.cpp:10:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   10 | BOOST_AUTO_TEST_CASE(test_nonscalar_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_eigen.cpp:15:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   15 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+3 warnings generated.
+[ 58%] Linking CXX executable test_skyline_lu
+3 warnings generated.
+[ 62%] Linking CXX executable test_io
+[ 62%] Built target test_skyline_lu
+[ 62%] Built target test_io
+5 warnings generated.
+[ 66%] Linking CXX executable test_qr
+[ 66%] Built target test_qr
+3 warnings generated.
+[ 70%] Linking CXX executable test_complex_erf
+[ 70%] Built target test_complex_erf
+6 warnings generated.
+[ 75%] Linking CXX executable test_eigen_solver
+[ 75%] Built target test_eigen_solver
+3 warnings generated.
+[ 79%] Linking CXX executable test_solver_complex
+[ 79%] Built target test_solver_complex
+3 warnings generated.
+[ 83%] Linking CXX executable test_solver_block_crs
+3 warnings generated.
+[ 87%] Linking CXX executable test_solver_ns_builtin
+[ 87%] Built target test_solver_block_crs
+[ 87%] Built target test_solver_ns_builtin
+4 warnings generated.
+[ 91%] Linking CXX executable test_solver_eigen
+[ 91%] Built target test_solver_eigen
+3 warnings generated.
+[ 95%] Linking CXX executable test_solver_ns_eigen
+[ 95%] Built target test_solver_ns_eigen
+3 warnings generated.
+[100%] Linking CXX executable test_solver_builtin
+[100%] Built target test_solver_builtin

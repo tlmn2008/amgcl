@@ -1,0 +1,47 @@
+{
+  "repo_name": "amgcl",
+  "repo_url": "https://github.com/ddemidov/amgcl.git",
+  "source_commit": "3f7970bdd5ab07c4e14eca1689b6bf5fe077a6a4",
+  "source_commit_date": "2026-07-18T07:42:56+03:00",
+  "source_branch": "master",
+  "migration_started_at": "2026-08-03T17:37:00+08:00",
+  "migration_finished_at": "2026-08-03T18:10:00+08:00",
+  "sdk_version": "CoreX 4.5.0.20260630",
+  "skill_version": "corex-cuda-compatible-migration",
+  "compile_status": "success",
+  "test_status": "all_pass",
+  "overall_status": "migrated",
+  "tests_run": 13,
+  "tests_passed": 13,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "summary": "amgcl 是 ddemidov 的 header-only C++ 代数多重网格(AMG)求解库，AMG 层级在 CPU(builtin/Eigen 后端)构建，求解阶段可切换到 CUDA 后端(amgcl/backend/cuda.hpp，依赖 cuBLAS/cuSPARSE/thrust)。整库改用 CoreX clang++(clang 22.1.0 / ivcore11)编译：主机侧 ctest 测试套件(builtin/complex/block_crs/Eigen 等 12 个用例)零改动全部通过；CUDA 后端也已在 ivcore11 上编译并真实运行通过。迁移中真实复现两个关键难点：(1) 上游用 nvcc 的 cuda_add_executable 构建 CUDA 示例，CoreX 无 nvcc——改为平台门控地用 clang++ -x ivcore --cuda-gpu-arch=ivcore11 直接编译；(2) CoreX 的 CUDA 运行时报告为 10.2，使 amgcl 走了 legacy cuSPARSE Hyb SpMV 路径(cusparseScsr2hyb/S/Dhybmv)，实测该路径在 ivcore11 上是静默 no-op(SpMV 返回全 0)，导致任何求解器都不收敛——通过平台门控强制启用现代 generic cusparseSpMV API 修复(float 正确)。最后如实确认 ivcore11 无真 FP64：thrust::inner_product<double> 抛 ixErrorSymbolNotFound、generic cusparseSpMV<double> 返回 NOT_SUPPORTED(错误码 10)，故 double 路径无法在本平台工作，按红线 3/5 做平台门控的 FP32 降级(AMGCL_CUDA_COREX_FP32)，降级后 CUDA 后端在 3D Poisson 上收敛(6~7 步，残差 ~1e-7~1e-9)。已把 CUDA 后端求解注册为 ctest 用例(test_solver_cuda)纳入全量测试。",
+  "key_adaptations": [
+    "全仓库改用 CoreX clang++ 编译；主机侧 ctest 测试套件 12 个用例零源码改动通过(builtin/Eigen/complex/block_crs/skyline_lu/qr/io/static_matrix 等)。",
+    "CMakeLists.txt 新增平台门控 option(USE_COREX)(依据 /usr/local/corex 自动探测)：CoreX 上以 INTERFACE 库 cuda_target 直接链接 CoreX 的 libcusparse/libcudart/libcublas，并用 clang++ -x ivcore --cuda-gpu-arch=ivcore11 -std=c++17 编译 .cu/.cpp；上游 find_package(CUDA)+nvcc 分支保持在 else，NVIDIA 路径逐字节不变。",
+    "examples/CMakeLists.txt、tutorial/1.poisson3Db/CMakeLists.txt 增加 USE_COREX 分支，用 clang++ 取代 cuda_add_executable 构建 solver/schur_pressure_correction/cpr_drs/poisson3Db 的 CUDA 版；MPI+CUDA 分布式示例(需多 rank/输入矩阵)在 CoreX 下按 <=2GPU 约束跳过。",
+    "amgcl/backend/cuda.hpp 新增平台门控宏 AMGCL_CUDA_COREX：CoreX 上强制走现代 generic cusparseSpMV API(替代在 ivcore11 上是 no-op 的 legacy Hyb SpMV)，并把 11.0 才有的 CUSPARSE_SPMV_CSR_ALG1 映射为 CoreX 10.2 的 CUSPARSE_MV_ALG_DEFAULT；未定义该宏时行为等价于原 CUDART_VERSION>=11000 判断，NVIDIA 路径不变。",
+    "examples/solver.cpp 新增平台门控宏 AMGCL_CUDA_COREX_FP32：ivcore11 无真 FP64，将 CUDA 后端 value_type 由 double 降级为 float(守卫式，默认 double 分支保留)；降级后 3D Poisson 求解收敛。",
+    "新增 cmake/corex_check_convergence.cmake，把 solver_cuda 的运行包装成收敛判定的 ctest 用例 test_solver_cuda，使 ctest 全量覆盖迁移后的 GPU 求解路径。"
+  ],
+  "upstream_assessment": {
+    "upstream_status": "ready",
+    "notes": "所有 CoreX 改动都在平台开关后面、对 NVIDIA/上游默认路径零回归：(1) CMake 的 USE_COREX 依据 /usr/local/corex 探测，NVIDIA 机器上不存在该目录即走原 nvcc 分支；(2) backend/cuda.hpp 的 generic-SpMV 强制仅在定义 AMGCL_CUDA_COREX 时生效，否则等价于原 CUDART_VERSION>=11000 判断，现代 NVIDIA(CUDA>=11)本就走该路径，旧 NVIDIA(<11)仍走 Hyb；(3) solver.cpp 的 FP32 降级仅在定义 AMGCL_CUDA_COREX_FP32 时生效，默认 double。generic-SpMV 门控本身是干净的可移植改进(Hyb 早已被 NVIDIA 废弃)，可直接向上游提 PR 供其他 CoreX/ivcore11 用户直接使用。未改动上游默认分支。真正无法合入的只是 FP64 硬件缺失本身(见 blockers)，与源码无关。",
+    "pr_url": ""
+  },
+  "bugfixes": [],
+  "github": {
+    "fork_url": "",
+    "branch": "corex-port",
+    "default_branch": "",
+    "default_branch_status": "not_attempted",
+    "compare_url": "",
+    "push_commit": "",
+    "push_status": "pending",
+    "pushed_at": ""
+  },
+  "local_logs": {
+    "compile_log": "corex_port/build/build_full.log, corex_port/build/build_cuda_examples.log, corex_port/build/cuda/compile_*.log",
+    "test_log": "corex_port/test/test.log"
+  }
+}

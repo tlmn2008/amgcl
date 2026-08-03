@@ -151,7 +151,50 @@ endif()
 #----------------------------------------------------------------------------
 # Find CUDA
 #----------------------------------------------------------------------------
-if(CMAKE_CXX_COMPILER_ID MATCHES "GNU" OR CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+# Iluvatar CoreX (ivcore11) CUDA backend, platform-guarded and non-invasive.
+# When building on a CoreX SDK (auto-detected from /usr/local/corex) the upstream
+# nvcc/FindCUDA path is unusable (no nvcc; clang++ -x ivcore is the compiler), so
+# we build the CUDA examples as clang++ CUDA targets and force the modern generic
+# cuSPARSE SpMV path (see amgcl/backend/cuda.hpp AMGCL_CUDA_COREX). The upstream
+# NVIDIA branch below is left byte-for-byte unchanged and is taken when USE_COREX
+# is OFF.
+set(COREX_ROOT "/usr/local/corex" CACHE PATH "Iluvatar CoreX SDK root")
+if (NOT DEFINED USE_COREX)
+    if (EXISTS "${COREX_ROOT}")
+        set(USE_COREX ON)
+    else()
+        set(USE_COREX OFF)
+    endif()
+endif()
+option(USE_COREX "Build the CUDA backend for Iluvatar CoreX (ivcore11) with clang++ -x ivcore" ${USE_COREX})
+# ivcore11 has no real FP64 (double device reductions / cusparse double SpMV are
+# unsupported), so downgrade the CUDA value type to float on CoreX by default.
+option(AMGCL_COREX_FP32 "Downgrade CUDA value type to float on CoreX (ivcore11 has no real FP64)" ON)
+
+if (USE_COREX)
+    message(STATUS "AMGCL: building CUDA backend for Iluvatar CoreX (ivcore11) from ${COREX_ROOT}")
+
+    add_library(cuda_target INTERFACE)
+    target_include_directories(cuda_target SYSTEM INTERFACE ${COREX_ROOT}/include)
+    target_link_libraries(cuda_target INTERFACE
+        ${COREX_ROOT}/lib/libcusparse.so
+        ${COREX_ROOT}/lib/libcudart.so
+        ${COREX_ROOT}/lib/libcublas.so
+        )
+    target_compile_definitions(cuda_target INTERFACE AMGCL_CUDA_COREX)
+    if (AMGCL_COREX_FP32)
+        target_compile_definitions(cuda_target INTERFACE AMGCL_CUDA_COREX_FP32)
+    endif()
+
+    # Flags that turn a .cpp/.cu into an ivcore11 CUDA translation unit for clang++.
+    # -std=c++17 is required by ixthrust (CoreX Thrust hard-#errors below C++17).
+    set(AMGCL_COREX_CUDA_FLAGS
+        -x ivcore
+        --cuda-path=${COREX_ROOT}
+        --cuda-gpu-arch=ivcore11
+        -std=c++17
+        CACHE INTERNAL "clang++ flags to compile CUDA sources for CoreX")
+elseif(CMAKE_CXX_COMPILER_ID MATCHES "GNU" OR CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     find_package(CUDA)
     if (CUDA_FOUND)
         set(CUDA_TARGET_ARCH "Kepler Maxwell Pascal" CACHE STRING "Target architecture(s) for CUDA")

@@ -21,7 +21,17 @@
 #elif defined(SOLVER_BACKEND_CUDA)
 #  include <amgcl/backend/cuda.hpp>
 #  include <amgcl/relaxation/cusparse_ilu0.hpp>
+   // Iluvatar CoreX (ivcore11) has no real FP64: device-side `double` reductions
+   // (thrust/CUB) hit a missing symbol / silently degrade, so the default
+   // amgcl::backend::cuda<double> path cannot converge there. Behind an opt-in,
+   // platform-guarded switch we downgrade the CUDA value type to float. The
+   // upstream/NVIDIA default (double) is byte-for-byte unchanged when the macro
+   // is not defined. See corex_port/ for evidence.
+#  if defined(AMGCL_CUDA_COREX_FP32)
+   typedef amgcl::backend::cuda<float> Backend;
+#  else
    typedef amgcl::backend::cuda<double> Backend;
+#  endif
 #elif defined(SOLVER_BACKEND_HIP)
 #  include <amgcl/backend/hip.hpp>
 #  include <amgcl/relaxation/rocsparse_ilu0.hpp>

@@ -6,8 +6,16 @@ target_link_libraries(poisson3Db_mixed amgcl)
 target_compile_definitions(poisson3Db_mixed PRIVATE MIXED_PRECISION)
 
 if (TARGET cuda_target)
-    cuda_add_executable(poisson3Db_cuda poisson3Db_cuda.cu)
-    target_link_libraries(poisson3Db_cuda amgcl cuda_target)
+    if (USE_COREX)
+        # CoreX (ivcore11): compile the .cu straight with clang++ -x ivcore.
+        set_source_files_properties(poisson3Db_cuda.cu PROPERTIES LANGUAGE CXX)
+        add_executable(poisson3Db_cuda poisson3Db_cuda.cu)
+        target_compile_options(poisson3Db_cuda PRIVATE ${AMGCL_COREX_CUDA_FLAGS})
+        target_link_libraries(poisson3Db_cuda amgcl cuda_target)
+    else()
+        cuda_add_executable(poisson3Db_cuda poisson3Db_cuda.cu)
+        target_link_libraries(poisson3Db_cuda amgcl cuda_target)
+    endif()
 endif()
 
 if(TARGET mpi_target)

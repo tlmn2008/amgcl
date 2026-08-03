@@ -1,0 +1,1227 @@
+[  1%] Building CXX object tests/CMakeFiles/test_skyline_lu.dir/test_skyline_lu.cpp.o
+[  1%] Building CXX object tests/CMakeFiles/test_complex_erf.dir/test_complex_erf.cpp.o
+[  2%] Building CXX object tests/CMakeFiles/test_qr.dir/test_qr.cpp.o
+[  3%] Building CXX object tests/CMakeFiles/test_solver_builtin.dir/test_solver_builtin.cpp.o
+[  4%] Building CXX object tests/CMakeFiles/test_solver_complex.dir/test_solver_complex.cpp.o
+[  4%] Building CXX object tests/CMakeFiles/test_solver_block_crs.dir/test_solver_block_crs.cpp.o
+[  5%] Building CXX object tests/CMakeFiles/test_io.dir/test_io.cpp.o
+[  6%] Building CXX object tests/CMakeFiles/test_solver_ns_builtin.dir/test_solver_ns_builtin.cpp.o
+[  7%] Building CXX object tests/CMakeFiles/test_static_matrix.dir/test_static_matrix.cpp.o
+[  8%] Building CXX object tests/CMakeFiles/test_eigen_solver.dir/test_eigen_solver.cpp.o
+[ 10%] Building CXX object lib/CMakeFiles/libamgcl.dir/amgcl.cpp.o
+[ 10%] Building CXX object tests/CMakeFiles/test_solver_eigen.dir/test_solver_eigen.cpp.o
+[ 10%] Building CXX object tests/CMakeFiles/test_solver_ns_eigen.dir/test_solver_ns_eigen.cpp.o
+[ 12%] Building CXX object examples/CMakeFiles/crs_builder.dir/crs_builder.cpp.o
+[ 12%] Building CXX object examples/CMakeFiles/solver.dir/solver.cpp.o
+[ 12%] Building CXX object examples/CMakeFiles/mm2bin.dir/mm2bin.cpp.o
+[ 13%] Building CXX object examples/CMakeFiles/block_crs.dir/block_crs.cpp.o
+[ 13%] Building CXX object examples/CMakeFiles/solver_complex.dir/solver_complex.cpp.o
+[ 14%] Building CXX object examples/CMakeFiles/cpr.dir/cpr.cpp.o
+[ 14%] Building CXX object examples/CMakeFiles/bin2mm.dir/bin2mm.cpp.o
+[ 15%] Building CXX object examples/CMakeFiles/cpr_drs.dir/cpr_drs.cpp.o
+[ 16%] Building CXX object examples/CMakeFiles/custom_adapter.dir/custom_adapter.cpp.o
+[ 17%] Building CXX object examples/CMakeFiles/schur_pressure_correction.dir/schur_pressure_correction.cpp.o
+[ 18%] Building CXX object examples/CMakeFiles/ns_search.dir/ns_search.cpp.o
+[ 20%] Building CXX object examples/CMakeFiles/schurpc_mixed.dir/schurpc_mixed.cpp.o
+[ 20%] Building CXX object examples/CMakeFiles/deflated_solver.dir/deflated_solver.cpp.o
+[ 21%] Building CXX object examples/CMakeFiles/mixed_precision.dir/mixed_precision.cpp.o
+[ 22%] Building CXX object examples/CMakeFiles/ublas.dir/ublas.cpp.o
+[ 23%] Building CXX object examples/CMakeFiles/solver_eigen.dir/solver.cpp.o
+[ 23%] Building CXX object examples/CMakeFiles/schurpc_mixed_eigen.dir/schurpc_mixed.cpp.o
+[ 24%] Building CXX object examples/CMakeFiles/schur_pressure_correction_cuda.dir/schur_pressure_correction.cpp.o
+[ 25%] Building CXX object examples/CMakeFiles/solver_cuda.dir/solver.cpp.o
+[ 26%] Building CXX object examples/mpi/CMakeFiles/check_direct.dir/check_direct.cpp.o
+[ 27%] Building CXX object examples/mpi/CMakeFiles/runtime_bp.dir/runtime_bp.cpp.o
+[ 28%] Building CXX object examples/mpi/CMakeFiles/runtime_sdd.dir/runtime_sdd.cpp.o
+[ 29%] Building CXX object examples/CMakeFiles/cpr_drs_cuda.dir/cpr_drs.cpp.o
+[ 30%] Building CXX object examples/mpi/CMakeFiles/mpi_solver.dir/mpi_solver.cpp.o
+[ 31%] Building CXX object examples/mpi/CMakeFiles/schur_pc_mpi.dir/schur_pc_mpi.cpp.o
+[ 33%] Building CXX object examples/mpi/CMakeFiles/cpr_mpi.dir/cpr_mpi.cpp.o
+[ 33%] Building CXX object examples/mpi/CMakeFiles/spmm_scaling.dir/spmm_scaling.cpp.o
+[ 33%] Building CXX object examples/mpi/CMakeFiles/solve_mm_mpi.dir/solve_mm_mpi.cpp.o
+[ 34%] Building CXX object examples/mpi/CMakeFiles/test_transpose.dir/test_transpose.cpp.o
+[ 34%] Building CXX object examples/mpi/CMakeFiles/runtime_sdd_3d.dir/runtime_sdd_3d.cpp.o
+[ 35%] Building CXX object examples/mpi/CMakeFiles/test_spmm.dir/test_spmm.cpp.o
+[ 36%] Building CXX object tutorial/1.poisson3Db/CMakeFiles/poisson3Db.dir/poisson3Db.cpp.o
+[ 37%] Building CXX object examples/mpi/CMakeFiles/partition.dir/partition.cpp.o
+[ 38%] Building CXX object examples/mpi/CMakeFiles/mpi_complex.dir/mpi_complex.cpp.o
+[ 39%] Building CXX object tutorial/1.poisson3Db/CMakeFiles/poisson3Db_mixed.dir/poisson3Db.cpp.o
+[ 40%] Building CXX object tutorial/3.CoupCons3D/CMakeFiles/coupcons3d_spc.dir/coupcons3d_spc.cpp.o
+[ 41%] Building CXX object tutorial/1.poisson3Db/CMakeFiles/poisson3Db_mpi.dir/poisson3Db_mpi.cpp.o
+[ 41%] Building CXX object tutorial/1.poisson3Db/CMakeFiles/poisson3Db_cuda.dir/poisson3Db_cuda.cu.o
+[ 42%] Building CXX object tutorial/2.Serena/CMakeFiles/serena.dir/serena.cpp.o
+[ 42%] Building CXX object tutorial/3.CoupCons3D/CMakeFiles/coupcons3d.dir/coupcons3d.cpp.o
+[ 43%] Building CXX object tutorial/2.Serena/CMakeFiles/serena_mpi.dir/serena_mpi.cpp.o
+[ 44%] Building CXX object tutorial/5.Nullspace/CMakeFiles/nullspace.dir/nullspace.cpp.o
+[ 45%] Building CXX object tutorial/4.Stokes/CMakeFiles/stokes_ucube.dir/stokes_ucube.cpp.o
+[ 46%] Building CXX object tutorial/5.Nullspace/CMakeFiles/nullspace_hybrid.dir/nullspace_hybrid.cpp.o
+[ 47%] Building CXX object tutorial/5.Nullspace/CMakeFiles/nullspace_mpi.dir/nullspace_mpi.cpp.o
+[ 47%] Building CXX object tutorial/5.Nullspace/CMakeFiles/nullspace_block.dir/nullspace_block.cpp.o
+In file included from /home/repos/amgcl/tutorial/2.Serena/serena_mpi.cpp:9:
+In file included from /home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:35:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/tutorial/2.Serena/serena_mpi.cpp:9:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+In file included from /home/repos/amgcl/tests/test_solver_eigen.cpp:3:
+In file included from /home/repos/amgcl/amgcl/backend/eigen.hpp:35:
+In file included from /home/repos/amgcl/amgcl/adapter/eigen.hpp:36:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/tutorial/5.Nullspace/nullspace_mpi.cpp:8:
+In file included from /home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:35:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/tutorial/5.Nullspace/nullspace_mpi.cpp:8:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+In file included from /home/repos/amgcl/examples/mpi/test_transpose.cpp:8:
+In file included from /home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:35:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/mpi/test_transpose.cpp:8:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+/home/repos/amgcl/tests/test_solver_ns_builtin.cpp:8:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    8 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_builtin.cpp:10:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   10 | BOOST_AUTO_TEST_CASE(test_nonscalar_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_builtin.cpp:15:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   15 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_solver_complex.cpp:9:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    9 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_complex.cpp:11:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   11 | BOOST_AUTO_TEST_CASE(test_builtin_complex_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_complex.cpp:16:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   16 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_solver_block_crs.cpp:7:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    7 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_block_crs.cpp:9:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    9 | BOOST_AUTO_TEST_CASE(test_block_crs_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_block_crs.cpp:14:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   14 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+In file included from /home/repos/amgcl/examples/mpi/mpi_solver.cpp:27:
+In file included from /home/repos/amgcl/amgcl/mpi/util.hpp:42:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/mpi/mpi_solver.cpp:28:
+In file included from /home/repos/amgcl/amgcl/mpi/make_solver.hpp:47:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+In file included from /home/repos/amgcl/examples/cpr_drs.cpp:17:
+In file included from /home/repos/amgcl/amgcl/backend/cuda.hpp:41:
+In file included from /usr/local/corex/include/thrust/device_vector.h:24:
+In file included from /usr/local/corex/include/thrust/detail/config.h:23:
+In file included from /usr/local/corex/include/thrust/detail/config/config.h:27:
+/usr/local/corex/include/thrust/detail/config/cpp_dialect.h:55:4: error: "ixthrust requires C++17 or newer. Please pass -std=c++17 (or -std=c++20) to your compiler, or use CMAKE_CXX_STANDARD>=17 / target_compile_features(... cxx_std_17). Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this error (unsupported)."
+   55 | #  error "ixthrust requires C++17 or newer. Please pass -std=c++17 (or -std=c++20) to your compiler, or use CMAKE_CXX_STANDARD>=17 / target_compile_features(... cxx_std_17). Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this error (unsupported)."
+      |    ^
+In file included from /home/repos/amgcl/examples/cpr_drs.cpp:17:
+In file included from /home/repos/amgcl/amgcl/backend/cuda.hpp:41:
+In file included from /usr/local/corex/include/thrust/device_vector.h:25:
+In file included from /usr/local/corex/include/thrust/detail/vector_base.h:29:
+In file included from /usr/local/corex/include/thrust/detail/contiguous_storage.h:240:
+In file included from /usr/local/corex/include/thrust/detail/contiguous_storage.inl:22:
+In file included from /usr/local/corex/include/thrust/detail/allocator/copy_construct_range.h:46:
+In file included from /usr/local/corex/include/thrust/detail/allocator/copy_construct_range.inl:21:
+In file included from /usr/local/corex/include/thrust/detail/copy.h:90:
+In file included from /usr/local/corex/include/thrust/detail/copy.inl:21:
+In file included from /usr/local/corex/include/thrust/system/detail/generic/copy.h:58:
+In file included from /usr/local/corex/include/thrust/system/detail/generic/copy.inl:21:
+In file included from /usr/local/corex/include/thrust/functional.h:26:
+In file included from /usr/local/corex/include/thrust/detail/functional/placeholder.h:20:
+In file included from /usr/local/corex/include/thrust/detail/functional/actor.h:34:
+/usr/local/corex/include/thrust/detail/type_traits/result_of_adaptable_function.h:41:23: error: no template named 'invoke_result_t' in namespace 'std'; did you mean '__invoke_result'?
+   41 |     using type = std::invoke_result_t<F, Args...>;
+      |                  ~~~~~^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/type_traits:2574:12: note: '__invoke_result' declared here
+ 2574 |     struct __invoke_result
+      |            ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:6:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    6 | BOOST_AUTO_TEST_SUITE( test_static_matrix )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:8:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    8 | BOOST_AUTO_TEST_CASE( sum ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:18:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   18 | BOOST_AUTO_TEST_CASE( minus ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:27:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   27 | BOOST_AUTO_TEST_CASE( product ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:37:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   37 | BOOST_AUTO_TEST_CASE( scale ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:45:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   45 | BOOST_AUTO_TEST_CASE( inner_product ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:52:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   52 | BOOST_AUTO_TEST_CASE( inverse ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:62:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   62 | BOOST_AUTO_TEST_CASE( inverse_pivoting ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:77:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   77 | BOOST_AUTO_TEST_CASE( inverse_pivoting_2 ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_static_matrix.cpp:92:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   92 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+In file included from /home/repos/amgcl/examples/mpi/schur_pc_mpi.cpp:40:
+In file included from /home/repos/amgcl/amgcl/mpi/make_solver.hpp:37:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/repos/amgcl/tests/test_solver_eigen.cpp:7:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    7 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_eigen.cpp:9:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    9 | BOOST_AUTO_TEST_CASE(test_eigen_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_eigen.cpp:14:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   14 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+In file included from /home/repos/amgcl/tutorial/1.poisson3Db/poisson3Db_mpi.cpp:7:
+In file included from /home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:35:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/tutorial/1.poisson3Db/poisson3Db_cuda.cu:4:
+In file included from /home/repos/amgcl/amgcl/backend/cuda.hpp:41:
+In file included from /usr/local/corex/include/thrust/device_vector.h:24:
+In file included from /usr/local/corex/include/thrust/detail/config.h:23:
+In file included from /usr/local/corex/include/thrust/detail/config/config.h:27:
+/usr/local/corex/include/thrust/detail/config/cpp_dialect.h:55:4: error: "ixthrust requires C++17 or newer. Please pass -std=c++17 (or -std=c++20) to your compiler, or use CMAKE_CXX_STANDARD>=17 / target_compile_features(... cxx_std_17). Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this error (unsupported)."
+   55 | #  error "ixthrust requires C++17 or newer. Please pass -std=c++17 (or -std=c++20) to your compiler, or use CMAKE_CXX_STANDARD>=17 / target_compile_features(... cxx_std_17). Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this error (unsupported)."
+      |    ^
+In file included from /home/repos/amgcl/examples/mpi/schur_pc_mpi.cpp:40:
+In file included from /home/repos/amgcl/amgcl/mpi/make_solver.hpp:47:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+In file included from /home/repos/amgcl/tests/test_eigen_solver.cpp:4:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/tutorial/1.poisson3Db/poisson3Db_mpi.cpp:7:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+/home/repos/amgcl/tests/test_io.cpp:13:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   13 | BOOST_AUTO_TEST_SUITE( test_io )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_io.cpp:15:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   15 | BOOST_AUTO_TEST_CASE(io_mm)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+In file included from /home/repos/amgcl/tests/test_eigen_solver.cpp:4:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+/home/repos/amgcl/tests/test_io.cpp:51:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   51 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_skyline_lu.cpp:14:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   14 | BOOST_AUTO_TEST_SUITE( test_skyline_lu )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_skyline_lu.cpp:16:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   16 | BOOST_AUTO_TEST_CASE(skyline_lu)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_skyline_lu.cpp:39:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   39 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+In file included from /home/repos/amgcl/examples/solver.cpp:40:
+In file included from /home/repos/amgcl/amgcl/backend/eigen.hpp:35:
+In file included from /home/repos/amgcl/amgcl/adapter/eigen.hpp:36:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/tutorial/1.poisson3Db/poisson3Db_cuda.cu:4:
+In file included from /home/repos/amgcl/amgcl/backend/cuda.hpp:41:
+In file included from /usr/local/corex/include/thrust/device_vector.h:25:
+In file included from /usr/local/corex/include/thrust/detail/vector_base.h:29:
+In file included from /usr/local/corex/include/thrust/detail/contiguous_storage.h:240:
+In file included from /usr/local/corex/include/thrust/detail/contiguous_storage.inl:22:
+In file included from /usr/local/corex/include/thrust/detail/allocator/copy_construct_range.h:46:
+In file included from /usr/local/corex/include/thrust/detail/allocator/copy_construct_range.inl:21:
+In file included from /usr/local/corex/include/thrust/detail/copy.h:90:
+In file included from /usr/local/corex/include/thrust/detail/copy.inl:21:
+In file included from /usr/local/corex/include/thrust/system/detail/generic/copy.h:58:
+In file included from /usr/local/corex/include/thrust/system/detail/generic/copy.inl:21:
+In file included from /usr/local/corex/include/thrust/functional.h:26:
+In file included from /usr/local/corex/include/thrust/detail/functional/placeholder.h:20:
+In file included from /usr/local/corex/include/thrust/detail/functional/actor.h:34:
+/usr/local/corex/include/thrust/detail/type_traits/result_of_adaptable_function.h:41:23: error: no template named 'invoke_result_t' in namespace 'std'; did you mean '__invoke_result'?
+   41 |     using type = std::invoke_result_t<F, Args...>;
+      |                  ~~~~~^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/type_traits:2574:12: note: '__invoke_result' declared here
+ 2574 |     struct __invoke_result
+      |            ^
+In file included from /home/repos/amgcl/examples/mpi/test_spmm.cpp:9:
+In file included from /home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:35:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/mpi/mpi_solver.cpp:29:
+In file included from /home/repos/amgcl/amgcl/mpi/preconditioner.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/examples/mpi/mpi_solver.cpp:29:
+In file included from /home/repos/amgcl/amgcl/mpi/preconditioner.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+/home/repos/amgcl/tests/test_qr.cpp:140:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  140 | BOOST_AUTO_TEST_SUITE( test_qr )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_qr.cpp:142:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  142 | BOOST_AUTO_TEST_CASE( test_qr_factorize ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+In file included from /home/repos/amgcl/examples/mpi/test_spmm.cpp:9:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+/home/repos/amgcl/tests/test_qr.cpp:162:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  162 | BOOST_AUTO_TEST_CASE( test_qr_solve ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_qr.cpp:182:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  182 | BOOST_AUTO_TEST_CASE( qr_issue_39 ) {
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_qr.cpp:209:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+  209 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_solver_builtin.cpp:7:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    7 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_builtin.cpp:9:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    9 | BOOST_AUTO_TEST_CASE(test_builtin_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_builtin.cpp:17:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   17 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+[ 48%] Linking CXX executable bin2mm
+In file included from /home/repos/amgcl/examples/cpr_drs.cpp:17:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/cpr_drs.cpp:18:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+In file included from /home/repos/amgcl/examples/mpi/check_direct.cpp:14:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:41:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/skyline_lu.hpp:37:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/mpi/schur_pc_mpi.cpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+[ 48%] Built target bin2mm
+/home/repos/amgcl/tests/test_complex_erf.cpp:36:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   36 | BOOST_AUTO_TEST_SUITE( test_complex )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_complex_erf.cpp:38:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   38 | BOOST_AUTO_TEST_CASE(complex_matrix_adapter)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+In file included from /home/repos/amgcl/examples/mpi/schur_pc_mpi.cpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+In file included from /home/repos/amgcl/examples/schur_pressure_correction.cpp:17:
+In file included from /home/repos/amgcl/amgcl/backend/cuda.hpp:41:
+In file included from /usr/local/corex/include/thrust/device_vector.h:24:
+In file included from /usr/local/corex/include/thrust/detail/config.h:23:
+In file included from /usr/local/corex/include/thrust/detail/config/config.h:27:
+/usr/local/corex/include/thrust/detail/config/cpp_dialect.h:55:4: error: "ixthrust requires C++17 or newer. Please pass -std=c++17 (or -std=c++20) to your compiler, or use CMAKE_CXX_STANDARD>=17 / target_compile_features(... cxx_std_17). Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this error (unsupported)."
+   55 | #  error "ixthrust requires C++17 or newer. Please pass -std=c++17 (or -std=c++20) to your compiler, or use CMAKE_CXX_STANDARD>=17 / target_compile_features(... cxx_std_17). Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this error (unsupported)."
+      |    ^
+/home/repos/amgcl/tests/test_complex_erf.cpp:86:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   86 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+In file included from /home/repos/amgcl/examples/mpi/spmm_scaling.cpp:9:
+In file included from /home/repos/amgcl/amgcl/mpi/util.hpp:42:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/schur_pressure_correction.cpp:17:
+In file included from /home/repos/amgcl/amgcl/backend/cuda.hpp:41:
+In file included from /usr/local/corex/include/thrust/device_vector.h:25:
+In file included from /usr/local/corex/include/thrust/detail/vector_base.h:29:
+In file included from /usr/local/corex/include/thrust/detail/contiguous_storage.h:240:
+In file included from /usr/local/corex/include/thrust/detail/contiguous_storage.inl:22:
+In file included from /usr/local/corex/include/thrust/detail/allocator/copy_construct_range.h:46:
+In file included from /usr/local/corex/include/thrust/detail/allocator/copy_construct_range.inl:21:
+In file included from /usr/local/corex/include/thrust/detail/copy.h:90:
+In file included from /usr/local/corex/include/thrust/detail/copy.inl:21:
+In file included from /usr/local/corex/include/thrust/system/detail/generic/copy.h:58:
+In file included from /usr/local/corex/include/thrust/system/detail/generic/copy.inl:21:
+In file included from /usr/local/corex/include/thrust/functional.h:26:
+In file included from /usr/local/corex/include/thrust/detail/functional/placeholder.h:20:
+In file included from /usr/local/corex/include/thrust/detail/functional/actor.h:34:
+/usr/local/corex/include/thrust/detail/type_traits/result_of_adaptable_function.h:41:23: error: no template named 'invoke_result_t' in namespace 'std'; did you mean '__invoke_result'?
+   41 |     using type = std::invoke_result_t<F, Args...>;
+      |                  ~~~~~^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/type_traits:2574:12: note: '__invoke_result' declared here
+ 2574 |     struct __invoke_result
+      |            ^
+In file included from /home/repos/amgcl/examples/mpi/cpr_mpi.cpp:11:
+In file included from /home/repos/amgcl/amgcl/mpi/make_solver.hpp:37:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/solver.cpp:22:
+In file included from /home/repos/amgcl/amgcl/backend/cuda.hpp:41:
+In file included from /usr/local/corex/include/thrust/device_vector.h:24:
+In file included from /usr/local/corex/include/thrust/detail/config.h:23:
+In file included from /usr/local/corex/include/thrust/detail/config/config.h:27:
+/usr/local/corex/include/thrust/detail/config/cpp_dialect.h:55:4: error: "ixthrust requires C++17 or newer. Please pass -std=c++17 (or -std=c++20) to your compiler, or use CMAKE_CXX_STANDARD>=17 / target_compile_features(... cxx_std_17). Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this error (unsupported)."
+   55 | #  error "ixthrust requires C++17 or newer. Please pass -std=c++17 (or -std=c++20) to your compiler, or use CMAKE_CXX_STANDARD>=17 / target_compile_features(... cxx_std_17). Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this error (unsupported)."
+      |    ^
+In file included from /home/repos/amgcl/examples/mpi/check_direct.cpp:14:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:41:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/skyline_lu.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/solver_base.hpp:35:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+3 warnings generated.
+In file included from /home/repos/amgcl/examples/mpi/spmm_scaling.cpp:10:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+[ 49%] Linking CXX executable test_transpose
+In file included from /home/repos/amgcl/examples/mpi/cpr_mpi.cpp:11:
+In file included from /home/repos/amgcl/amgcl/mpi/make_solver.hpp:47:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+In file included from /home/repos/amgcl/examples/mpi/mpi_complex.cpp:14:
+In file included from /home/repos/amgcl/amgcl/mpi/util.hpp:42:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd_3d.cpp:32:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:41:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/skyline_lu.hpp:37:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/solver.cpp:22:
+In file included from /home/repos/amgcl/amgcl/backend/cuda.hpp:41:
+In file included from /usr/local/corex/include/thrust/device_vector.h:25:
+In file included from /usr/local/corex/include/thrust/detail/vector_base.h:29:
+In file included from /usr/local/corex/include/thrust/detail/contiguous_storage.h:240:
+In file included from /usr/local/corex/include/thrust/detail/contiguous_storage.inl:22:
+In file included from /usr/local/corex/include/thrust/detail/allocator/copy_construct_range.h:46:
+In file included from /usr/local/corex/include/thrust/detail/allocator/copy_construct_range.inl:21:
+In file included from /usr/local/corex/include/thrust/detail/copy.h:90:
+In file included from /usr/local/corex/include/thrust/detail/copy.inl:21:
+In file included from /usr/local/corex/include/thrust/system/detail/generic/copy.h:58:
+In file included from /usr/local/corex/include/thrust/system/detail/generic/copy.inl:21:
+In file included from /usr/local/corex/include/thrust/functional.h:26:
+In file included from /usr/local/corex/include/thrust/detail/functional/placeholder.h:20:
+In file included from /usr/local/corex/include/thrust/detail/functional/actor.h:34:
+/usr/local/corex/include/thrust/detail/type_traits/result_of_adaptable_function.h:41:23: error: no template named 'invoke_result_t' in namespace 'std'; did you mean '__invoke_result'?
+   41 |     using type = std::invoke_result_t<F, Args...>;
+      |                  ~~~~~^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/type_traits:2574:12: note: '__invoke_result' declared here
+ 2574 |     struct __invoke_result
+      |            ^
+10 warnings generated.
+[ 49%] Built target test_transpose
+[ 49%] Linking CXX executable test_static_matrix
+[ 50%] Linking CXX executable partition
+In file included from /home/repos/amgcl/examples/mpi/mpi_complex.cpp:15:
+In file included from /home/repos/amgcl/amgcl/mpi/make_solver.hpp:47:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd_3d.cpp:32:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:41:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/skyline_lu.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/solver_base.hpp:35:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+In file included from /home/repos/amgcl/examples/mpi/solve_mm_mpi.cpp:23:
+In file included from /home/repos/amgcl/amgcl/mpi/subdomain_deflation.hpp:41:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+[ 50%] Built target test_static_matrix
+[ 50%] Built target partition
+In file included from /home/repos/amgcl/examples/mpi/runtime_bp.cpp:16:
+In file included from /home/repos/amgcl/amgcl/mpi/make_solver.hpp:37:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/mpi/solve_mm_mpi.cpp:23:
+In file included from /home/repos/amgcl/amgcl/mpi/subdomain_deflation.hpp:46:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/skyline_lu.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/solver_base.hpp:35:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+In file included from /home/repos/amgcl/examples/mpi/runtime_bp.cpp:16:
+In file included from /home/repos/amgcl/amgcl/mpi/make_solver.hpp:47:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+/home/repos/amgcl/tests/test_eigen_solver.cpp:15:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   15 | BOOST_AUTO_TEST_SUITE( test_eigen_solver )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_eigen_solver.cpp:17:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   17 | BOOST_AUTO_TEST_CASE(eigen_solver)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_eigen.cpp:8:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+    8 | BOOST_AUTO_TEST_SUITE( test_solvers )
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:75:9: note: expanded from macro 'BOOST_AUTO_TEST_SUITE'
+   75 |         BOOST_AUTO_TEST_SUITE_NO_DECOR,                                 \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_eigen.cpp:10:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   10 | BOOST_AUTO_TEST_CASE(test_nonscalar_backend)
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:212:9: note: expanded from macro 'BOOST_AUTO_TEST_CASE'
+  212 |         BOOST_AUTO_TEST_CASE_NO_DECOR,                                  \
+      |         ^
+/home/repos/amgcl/tests/test_solver_ns_eigen.cpp:15:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   15 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+/home/repos/amgcl/tests/test_eigen_solver.cpp:43:1: warning: '__COUNTER__' is a C2y extension [-Wc2y-extensions]
+   43 | BOOST_AUTO_TEST_SUITE_END()
+      | ^
+/usr/include/boost/test/unit_test_suite.hpp:126:49: note: expanded from macro 'BOOST_AUTO_TEST_SUITE_END'
+  126 | #define BOOST_AUTO_TEST_SUITE_END()             \
+      |                                                 ^
+/usr/include/boost/test/unit_test_suite.hpp:368:68: note: expanded from macro '\
+BOOST_AUTO_TU_REGISTRAR'
+  368 | static boost::unit_test::ut_detail::auto_test_unit_registrar       \
+      |                                                                    ^
+/usr/include/boost/test/unit_test_suite.hpp:358:45: note: expanded from macro '\
+BOOST_TEST_APPEND_UNIQUE_ID'
+  358 |   BOOST_JOIN( BOOST_JOIN( name, __LINE__ ), __COUNTER__)
+      |                                             ^
+In file included from /home/repos/amgcl/tutorial/1.poisson3Db/poisson3Db_cuda.cu:4:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+3 warnings generated.
+[ 51%] Linking CXX executable test_skyline_lu
+[ 51%] Built target test_skyline_lu
+3 warnings generated.
+In file included from /home/repos/amgcl/examples/mpi/check_direct.cpp:14:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+[ 51%] Linking CXX executable test_io
+In file included from /home/repos/amgcl/examples/mpi/check_direct.cpp:14:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+[ 51%] Built target test_io
+In file included from /home/repos/amgcl/examples/mpi/cpr_mpi.cpp:18:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd_3d.cpp:32:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/examples/mpi/cpr_mpi.cpp:18:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+[ 52%] Linking CXX executable mixed_precision
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd_3d.cpp:32:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+[ 52%] Built target mixed_precision
+In file included from /home/repos/amgcl/examples/schur_pressure_correction.cpp:17:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/schur_pressure_correction.cpp:18:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+In file included from /home/repos/amgcl/examples/mpi/mpi_complex.cpp:16:
+In file included from /home/repos/amgcl/amgcl/mpi/preconditioner.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/examples/mpi/solve_mm_mpi.cpp:25:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/examples/mpi/mpi_complex.cpp:16:
+In file included from /home/repos/amgcl/amgcl/mpi/preconditioner.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+In file included from /home/repos/amgcl/examples/mpi/solve_mm_mpi.cpp:25:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+In file included from /home/repos/amgcl/examples/solver.cpp:22:
+/home/repos/amgcl/amgcl/backend/cuda.hpp:579:23: warning: unused parameter 'src_size' [-Wunused-parameter]
+  579 |         gather(size_t src_size, const std::vector<ptrdiff_t> &I, const params&)
+      |                       ^
+/home/repos/amgcl/amgcl/backend/cuda.hpp:596:24: warning: unused parameter 'size' [-Wunused-parameter]
+  596 |         scatter(size_t size, const std::vector<ptrdiff_t> &I, const params &)
+      |                        ^
+In file included from /home/repos/amgcl/examples/solver.cpp:23:
+/home/repos/amgcl/amgcl/relaxation/cusparse_ilu0.hpp:431:30: warning: unused parameter 'A' [-Wunused-parameter]
+  431 |     void apply(const Matrix &A, const VectorRHS &rhs, VectorX &x) const
+      |                              ^
+[ 53%] Linking CXX executable crs_builder
+[ 54%] Linking CXX executable mm2bin
+[ 54%] Built target crs_builder
+[ 54%] Built target mm2bin
+3 warnings and 2 errors generated when compiling for ivcore11.
+gmake[2]: *** [examples/CMakeFiles/cpr_drs_cuda.dir/build.make:79: examples/CMakeFiles/cpr_drs_cuda.dir/cpr_drs.cpp.o] Error 1
+gmake[2]: Target 'examples/CMakeFiles/cpr_drs_cuda.dir/build' not remade because of errors.
+gmake[1]: *** [CMakeFiles/Makefile2:1610: examples/CMakeFiles/cpr_drs_cuda.dir/all] Error 2
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd.cpp:44:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:41:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/skyline_lu.hpp:37:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd.cpp:44:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:41:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/skyline_lu.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/solver_base.hpp:35:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+5 warnings generated.
+[ 55%] Linking CXX executable test_qr
+2 warnings and 2 errors generated when compiling for ivcore11.
+gmake[2]: *** [tutorial/1.poisson3Db/CMakeFiles/poisson3Db_cuda.dir/build.make:79: tutorial/1.poisson3Db/CMakeFiles/poisson3Db_cuda.dir/poisson3Db_cuda.cu.o] Error 1
+gmake[2]: Target 'tutorial/1.poisson3Db/CMakeFiles/poisson3Db_cuda.dir/build' not remade because of errors.
+gmake[1]: *** [CMakeFiles/Makefile2:2155: tutorial/1.poisson3Db/CMakeFiles/poisson3Db_cuda.dir/all] Error 2
+[ 55%] Linking CXX executable custom_adapter
+3 warnings generated.
+[ 55%] Built target test_qr
+[ 56%] Linking CXX executable test_spmm
+[ 56%] Built target custom_adapter
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd.cpp:44:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:14:
+In file included from /usr/include/eigen3/Eigen/SparseCore:61:
+/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:273:13: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  273 |       Index count = 0;
+      |             ^
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd.cpp:44:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:43:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/eigen_splu.hpp:41:
+In file included from /usr/include/eigen3/Eigen/SparseLU:35:
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:78:9: warning: variable 'nsuper_et_post' set but not used [-Wunused-but-set-variable]
+   78 |   Index nsuper_et_post = 0; // Number of relaxed snodes in postordered etree 
+      |         ^
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:79:9: warning: variable 'nsuper_et' set but not used [-Wunused-but-set-variable]
+   79 |   Index nsuper_et = 0; // Number of relaxed snodes in the original etree 
+      |         ^
+[ 57%] Linking CXX executable ublas
+[ 57%] Built target test_spmm
+[ 57%] Built target ublas
+[ 58%] Linking CXX executable poisson3Db
+[ 59%] Linking CXX executable poisson3Db_mixed
+[ 59%] Built target poisson3Db_mixed
+[ 59%] Built target poisson3Db
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd.cpp:14:
+/home/repos/amgcl/examples/mpi/mba.hpp:129:56: warning: 'bind2nd<std::multiplies<unsigned long>, unsigned long>' is deprecated: use 'std::bind' instead [-Wdeprecated-declarations]
+  129 |     std::transform(a.begin(), a.end(), a.begin(), std::bind2nd(std::multiplies<T>(), b));
+      |                                                        ^
+/home/repos/amgcl/examples/mpi/mba.hpp:662:33: note: in instantiation of function template specialization 'mba::detail::operator*<unsigned long, 2UL>' requested here
+  662 |                     grid = grid * (size_t)(2) - (size_t)(1);
+      |                                 ^
+/home/repos/amgcl/examples/mpi/mba.hpp:591:13: note: in instantiation of function template specialization 'mba::MBA<2>::init<std::array<double, 2> *, double *>' requested here
+  591 |             init(
+      |             ^
+/home/repos/amgcl/examples/mpi/runtime_sdd.cpp:254:29: note: in instantiation of function template specialization 'mba::MBA<2>::MBA<std::array<std::array<double, 2>, 4>, std::array<double, 4>>' requested here
+  254 |                 mba::MBA<2> interp(cmin, cmax, grid, coo, val, 8, 1e-8, 0.5, zero);
+      |                             ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward/binders.h:170:5: note: 'bind2nd<std::multiplies<unsigned long>, unsigned long>' has been explicitly marked deprecated here
+  170 |     _GLIBCXX11_DEPRECATED_SUGGEST("std::bind")
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h:106:45: note: expanded from macro '_GLIBCXX11_DEPRECATED_SUGGEST'
+  106 | # define _GLIBCXX11_DEPRECATED_SUGGEST(ALT) _GLIBCXX_DEPRECATED_SUGGEST(ALT)
+      |                                             ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h:98:19: note: expanded from macro '_GLIBCXX_DEPRECATED_SUGGEST'
+   98 |   __attribute__ ((__deprecated__ ("use '" ALT "' instead")))
+      |                   ^
+In file included from /home/repos/amgcl/examples/mpi/runtime_sdd.cpp:14:
+/home/repos/amgcl/examples/mpi/mba.hpp:123:56: warning: 'bind2nd<std::minus<unsigned long>, unsigned long>' is deprecated: use 'std::bind' instead [-Wdeprecated-declarations]
+  123 |     std::transform(a.begin(), a.end(), a.begin(), std::bind2nd(std::minus<T>(), b));
+      |                                                        ^
+/home/repos/amgcl/examples/mpi/mba.hpp:662:47: note: in instantiation of function template specialization 'mba::detail::operator-<unsigned long, 2UL>' requested here
+  662 |                     grid = grid * (size_t)(2) - (size_t)(1);
+      |                                               ^
+/home/repos/amgcl/examples/mpi/mba.hpp:591:13: note: in instantiation of function template specialization 'mba::MBA<2>::init<std::array<double, 2> *, double *>' requested here
+  591 |             init(
+      |             ^
+/home/repos/amgcl/examples/mpi/runtime_sdd.cpp:254:29: note: in instantiation of function template specialization 'mba::MBA<2>::MBA<std::array<std::array<double, 2>, 4>, std::array<double, 4>>' requested here
+  254 |                 mba::MBA<2> interp(cmin, cmax, grid, coo, val, 8, 1e-8, 0.5, zero);
+      |                             ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward/binders.h:170:5: note: 'bind2nd<std::minus<unsigned long>, unsigned long>' has been explicitly marked deprecated here
+  170 |     _GLIBCXX11_DEPRECATED_SUGGEST("std::bind")
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h:106:45: note: expanded from macro '_GLIBCXX11_DEPRECATED_SUGGEST'
+  106 | # define _GLIBCXX11_DEPRECATED_SUGGEST(ALT) _GLIBCXX_DEPRECATED_SUGGEST(ALT)
+      |                                             ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h:98:19: note: expanded from macro '_GLIBCXX_DEPRECATED_SUGGEST'
+   98 |   __attribute__ ((__deprecated__ ("use '" ALT "' instead")))
+      |                   ^
+[ 60%] Linking CXX executable block_crs
+[ 61%] Linking CXX executable nullspace
+[ 61%] Built target block_crs
+[ 61%] Built target nullspace
+[ 62%] Linking CXX executable serena
+[ 62%] Built target serena
+[ 63%] Linking CXX executable coupcons3d
+3 warnings and 2 errors generated when compiling for ivcore11.
+gmake[2]: *** [examples/CMakeFiles/solver_cuda.dir/build.make:79: examples/CMakeFiles/solver_cuda.dir/solver.cpp.o] Error 1
+gmake[2]: Target 'examples/CMakeFiles/solver_cuda.dir/build' not remade because of errors.
+gmake[1]: *** [CMakeFiles/Makefile2:1546: examples/CMakeFiles/solver_cuda.dir/all] Error 2
+3 warnings and 2 errors generated when compiling for ivcore11.
+[ 64%] Linking CXX executable nullspace_hybrid
+gmake[2]: *** [examples/CMakeFiles/schur_pressure_correction_cuda.dir/build.make:79: examples/CMakeFiles/schur_pressure_correction_cuda.dir/schur_pressure_correction.cpp.o] Error 1
+gmake[2]: Target 'examples/CMakeFiles/schur_pressure_correction_cuda.dir/build' not remade because of errors.
+gmake[1]: *** [CMakeFiles/Makefile2:1578: examples/CMakeFiles/schur_pressure_correction_cuda.dir/all] Error 2
+[ 64%] Built target coupcons3d
+[ 64%] Built target nullspace_hybrid
+[ 65%] Linking CXX executable coupcons3d_spc
+3 warnings generated.
+[ 65%] Linking CXX executable nullspace_mpi
+[ 65%] Built target coupcons3d_spc
+3 warnings generated.
+[ 66%] Linking CXX executable test_complex_erf
+[ 66%] Built target nullspace_mpi
+[ 66%] Built target test_complex_erf
+3 warnings generated.
+[ 66%] Linking CXX executable serena_mpi
+[ 67%] Linking CXX executable nullspace_block
+[ 68%] Linking CXX executable stokes_ucube
+[ 68%] Built target nullspace_block
+[ 68%] Built target serena_mpi
+[ 68%] Built target stokes_ucube
+3 warnings generated.
+[ 68%] Linking CXX executable poisson3Db_mpi
+[ 68%] Built target poisson3Db_mpi
+3 warnings generated.
+[ 69%] Linking CXX executable spmm_scaling
+6 warnings generated.
+[ 70%] Linking CXX executable test_eigen_solver
+[ 70%] Built target spmm_scaling
+[ 70%] Built target test_eigen_solver
+3 warnings generated.
+[ 70%] Linking CXX executable test_solver_complex
+3 warnings generated.
+[ 70%] Built target test_solver_complex
+6 warnings generated.
+[ 71%] Linking CXX executable test_solver_ns_builtin
+[ 72%] Linking CXX executable check_direct
+[ 72%] Built target test_solver_ns_builtin
+[ 72%] Built target check_direct
+3 warnings generated.
+[ 73%] Linking CXX executable test_solver_block_crs
+[ 73%] Built target test_solver_block_crs
+4 warnings generated.
+[ 74%] Linking CXX executable test_solver_eigen
+[ 74%] Linking CXX static library libamgcl.a
+[ 74%] Built target libamgcl
+[ 74%] Built target test_solver_eigen
+[ 75%] Building CXX object lib/CMakeFiles/libamgcl_mpi.dir/amgcl_mpi.cpp.o
+[ 76%] Building CXX object examples/CMakeFiles/call_lib.dir/call_lib.cpp.o
+[ 77%] Linking CXX executable ns_search
+[ 77%] Built target ns_search
+[ 77%] Linking CXX executable call_lib
+[ 77%] Built target call_lib
+[ 78%] Linking CXX executable deflated_solver
+[ 78%] Built target deflated_solver
+3 warnings generated.
+[ 79%] Linking CXX executable test_solver_ns_eigen
+[ 79%] Built target test_solver_ns_eigen
+In file included from /home/repos/amgcl/lib/amgcl_mpi.cpp:10:
+In file included from /home/repos/amgcl/amgcl/mpi/solver/runtime.hpp:35:
+In file included from /home/repos/amgcl/amgcl/mpi/inner_product.hpp:34:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+In file included from /home/repos/amgcl/lib/amgcl_mpi.cpp:11:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/runtime.hpp:41:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/skyline_lu.hpp:45:
+In file included from /home/repos/amgcl/amgcl/mpi/direct_solver/solver_base.hpp:35:
+/home/repos/amgcl/amgcl/mpi/distributed_matrix.hpp:774:23: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  774 |         for(ptrdiff_t i = 0, ii = beg, head = 0; ii < end; ++i, ++ii) {
+      |                       ^
+[ 79%] Linking CXX executable solver_eigen
+[ 79%] Built target solver_eigen
+6 warnings generated.
+[ 80%] Linking CXX executable mpi_complex
+[ 80%] Built target mpi_complex
+6 warnings generated.
+[ 81%] Linking CXX executable cpr_mpi
+[ 81%] Built target cpr_mpi
+6 warnings generated.
+[ 82%] Linking CXX executable solve_mm_mpi
+3 warnings generated.
+[ 83%] Linking CXX executable runtime_bp
+[ 83%] Built target solve_mm_mpi
+[ 83%] Built target runtime_bp
+6 warnings generated.
+[ 84%] Linking CXX executable schur_pc_mpi
+[ 84%] Built target schur_pc_mpi
+[ 85%] Linking CXX executable cpr_drs
+[ 85%] Built target cpr_drs
+3 warnings generated.
+[ 86%] Linking CXX static library libamgcl_mpi.a
+[ 86%] Built target libamgcl_mpi
+[ 87%] Building CXX object examples/mpi/CMakeFiles/call_mpi_lib.dir/call_mpi_lib.cpp.o
+[ 87%] Linking CXX executable cpr
+[ 87%] Built target cpr
+In file included from /home/repos/amgcl/examples/mpi/call_mpi_lib.cpp:9:
+In file included from /home/repos/amgcl/amgcl/mpi/util.hpp:42:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2911:
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast from 'void (*)(void *, void *, int *, MPI_Datatype *, MPI_User_function *)' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **, void (*)(void *, void *, int *, struct ompi_datatype_t **))') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast from 'MPI::User_function *' (aka 'void (*)(const void *, void *, int, const Datatype &)') to 'MPI_User_function *' (aka 'void (*)(void *, void *, int *, struct ompi_datatype_t **)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+6 warnings generated.
+[ 88%] Linking CXX executable runtime_sdd_3d
+[ 88%] Built target runtime_sdd_3d
+8 warnings generated.
+[ 89%] Linking CXX executable runtime_sdd
+[ 89%] Built target runtime_sdd
+[ 90%] Linking CXX executable solver
+[ 90%] Built target solver
+2 warnings generated.
+[ 91%] Linking CXX executable call_mpi_lib
+[ 91%] Built target call_mpi_lib
+[ 92%] Linking CXX executable solver_complex
+[ 92%] Built target solver_complex
+3 warnings generated.
+[ 93%] Linking CXX executable test_solver_builtin
+[ 93%] Built target test_solver_builtin
+6 warnings generated.
+[ 93%] Linking CXX executable mpi_solver
+[ 93%] Built target mpi_solver
+[ 93%] Linking CXX executable schur_pressure_correction
+[ 93%] Built target schur_pressure_correction
+[ 94%] Linking CXX executable schurpc_mixed
+[ 94%] Built target schurpc_mixed
+[ 95%] Linking CXX executable schurpc_mixed_eigen
+[ 95%] Built target schurpc_mixed_eigen
+gmake[1]: Target 'all' not remade because of errors.
+gmake: *** [Makefile:146: all] Error 2
+gmake: Target 'default_target' not remade because of errors.

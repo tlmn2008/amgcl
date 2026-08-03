@@ -50,7 +50,10 @@ if (TARGET mpi_target)
 
     target_link_libraries(call_mpi_lib libamgcl_mpi)
 
-    if (TARGET cuda_target)
+    # The distributed MPI+CUDA examples rely on the nvcc FindCUDA
+    # cuda_add_executable() helper and on multi-rank input matrices; they are out
+    # of scope for the single-node (<=2 GPU) CoreX migration, so skip them there.
+    if (TARGET cuda_target AND NOT USE_COREX)
         foreach(example runtime_sdd runtime_sdd_3d schur_pc_mpi mpi_solver)
             configure_file(
                 ${CMAKE_CURRENT_SOURCE_DIR}/${example}.cpp
